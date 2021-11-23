@@ -1,6 +1,5 @@
-name: MineSoup
-main: net.cyberflame.minesoup.Main
+name: CombatAdditions
+main: net.cyberflame.combatadditions.Main
 version: ${project.version}
-description: Main
 website: https://cyberfla.me/
 author: CyberFlame
