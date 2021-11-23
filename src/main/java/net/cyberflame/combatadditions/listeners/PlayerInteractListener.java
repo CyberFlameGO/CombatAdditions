@@ -6,11 +6,12 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.NotNull;
 
 public class PlayerInteractListener implements Listener
 {
     @EventHandler
-    public void onPlayerInteract(final PlayerInteractEvent event)
+    public void onPlayerInteract(final @NotNull PlayerInteractEvent event)
     {
         final Player player = event.getPlayer();
         ItemStack itemStack = player.getItemInHand();

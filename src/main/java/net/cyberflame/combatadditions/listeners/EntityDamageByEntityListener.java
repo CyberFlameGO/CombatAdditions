@@ -6,11 +6,12 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.NotNull;
 
 public class EntityDamageByEntityListener implements Listener
 {
     @EventHandler(ignoreCancelled = true)
-    public void onEntityDamageByEntity(final EntityDamageByEntityEvent event)
+    public void onEntityDamageByEntity(final @NotNull EntityDamageByEntityEvent event)
     {
         if (event.getDamager() instanceof Player)
         {
